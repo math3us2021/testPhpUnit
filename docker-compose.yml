@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    image: apache-php71:latest
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:80"
